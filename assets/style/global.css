@@ -1,0 +1,68 @@
+:root { 
+  --bg: #ffffff; 
+  --text-primary: #1a1a1a;
+  --text-secondary: #6b6b6b;
+  --text-muted: #999;
+  --accent: #1a1a1a;
+  --font: "Merriweather", system-ui, sans-serif;
+}
+[data-theme="dark"] { --bg: #111; --text-primary: #f0f0f0; }
+
+@font-face {
+  font-family: 'Essays1743';
+  src: url("../fonts/Essays1743.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6, a, span {
+  font-family: 'Essays1743', Georgia, serif;
+}
+
+a {
+  color: inherit;
+}
+
+a:visited {
+  color: inherit;
+}
+
+.merriweather-unique {
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p, div {
+  font-family: var(--font);
+}
+
+span {
+  color: var(--text-secondary);
+}
+
+.container {
+  width: 100%;
+  max-width: 38rem;
+  margin: 0 auto;
+  padding: .5rem;
+}
+
+.nav-name {
+  font-size: 1.2rem;
+  letter-spacing: -0.01em;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.page-break { 
+  display: block;
+  width: 95%; 
+  height: 20px; 
+  margin: 1rem auto; 
+}
+
+.no-underline {
+  text-decoration: none;
+}

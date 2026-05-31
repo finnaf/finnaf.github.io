@@ -5,21 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>finnaf - Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=DM+Serif+Display&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style/global.css"/>
+  <link rel="stylesheet" href="assets/style/icons.css"/>
+  <link rel="stylesheet" href="assets/style/projects.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class="container">
         <header class="page-header">
             <nav>
-                <a href="index.html">Home</a>
+                <a href="index.html" class="nav-name">Home</a>
             </nav>
             <div class="theme-toggle"></div>
         </header>
-    </div>
-
-    <main>
+    
         <section class="hero">
             <h1>my `Very Awesome` work-in-progress portfolio website</h1>
             <div class="actions">
@@ -34,5 +35,21 @@
                 </a>
             </div>
         </section>
-    </main>
+
+        <svg class="page-break" viewBox="0 0 700 16" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+            <path d="M0,8 C25,3 35,13 60,8 C85,3 95,13 120,8 C145,3 155,13 180,8 C205,3 215,13 240,8 C265,3 275,13 300,8 C325,3 335,13 360,8 C385,3 395,13 420,8 C445,3 455,13 480,8 C505,3 515,13 540,8 C565,3 575,13 600,8 C625,3 635,13 660,8 C680,4 690,12 700,8"
+            stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+        </svg>
+        
+        <section class="projects">
+            <a href="dissertation.html" class="no-underline">
+                <h2 class="project-title">Simulating Snow on Alpine Terrain</h2>
+                <span>Undergraduate Dissertation</span>
+                <p>Bla bla This project generates and renders plausible snow cover distributions on alpine scenery
+by modifying and combining existing algorithms from literature. A graphical tool is presented
+to visualise and create the data, able to render large scenes at high frame rates on low-end
+consumer hardware.</p>
+            </a>
+        </section>
+    </div>
 </body>

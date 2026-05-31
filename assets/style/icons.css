@@ -1,0 +1,28 @@
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* optional spacing */
+  --size: 32px;
+}
+
+.icon-link {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  display: block;
+}
+
+.icon-link i {
+  font-size: var(--size);
+}
+
+.icon-link img {
+  margin-top: 4px;
+  width: var(--size);
+  height: var(--size);
+  filter: none;
+}
+
+.icon-link:hover {
+  color: #000;
+}

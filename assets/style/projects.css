@@ -1,0 +1,8 @@
+.projects {
+    color: var(--text-primary);
+}
+
+.project-title {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dissertation</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="assets/style.css">
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-name">:)</a>
+    <ul class="nav-links">
+      <li><a href="dissertation.html" class="active">Dissertation</a></li>
+      <li>
+        <button id="theme-toggle" aria-label="Toggle dark mode">
+          <span id="theme-icon">☾</span>
+        </button>
+      </li>
+    </ul>
+    
+  </nav>
+
+  <main>
+    <div class="page-header">
+      <p class="page-label">Undergraduate Individual Project</p>
+
+      <h1>Simulating Snow Distribution over Alpine Terrain</h1>
+
+      <div class="meta-row">
+        <div class="meta-item">
+          <span class="meta-label">University</span>
+          <span class="meta-value">University of Leeds</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">School</span>
+          <span class="meta-value">Computer Science</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Year</span>
+          <span class="meta-value">2025/26</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Grade</span>
+          <span class="meta-value">First Class</span>
+        </div>
+      </div>
+
+      <p class="abstract">
+        This project generates and renders plausible snow cover distributions on alpine scenery
+by modifying and combining existing algorithms from literature. A graphical tool is presented
+to visualise and create the data, able to render large scenes at high frame rates on low-end
+consumer hardware.
+      </p>
+
+      <div class="actions">
+        <!-- TODO GitHub Release asset URL (this works for now) -->
+        <a href="https://github.com/finnaf/dissertation" target="_blank" rel="noopener" class="btn btn-primary">
+          View Code
+        </a>
+        <a href="assets/AFFORSELLES26-FINAL.pdf" download class="btn btn-secondary">
+          Download PDF
+        </a>
+      </div>
+    </div>
+
+    <div class="viewer-section">
+      <div class="pdf-wrapper">
+        <iframe
+          src="assets/AFFORSELLES26-FINAL.pdf"
+          title="Dissertation PDF viewer"
+          aria-label="Embedded PDF of dissertation"
+        ></iframe>
+
+        <div class="pdf-fallback">
+          <p>PDF preview not available.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>
+      <a href="index.html">Back to homepage</a>
+      &nbsp;·&nbsp;
+      © 2026 Finn af Forselles
+    </p>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>

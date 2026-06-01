@@ -37,7 +37,7 @@
 
 .pdf-wrapper {
   border: 1px solid var(--border);
-  border-radius: 8px;
+  border-radius: 10px;
   overflow: hidden;
   background: var(--bg-subtle);
 }
@@ -72,9 +72,9 @@
 }
 .pdf-canvas-container {
   overflow-x: auto;
+  position: relative;
   display: flex;
   justify-content: center;
-  padding: 1rem;
   min-height: 400px;
 }
 #pdf-canvas {
@@ -91,6 +91,18 @@
   font-size: 0.9rem;
   color: var(--text-secondary);
   margin-bottom: 1rem;
+}
+
+/* layer itself is non-blocking, but individual links are clickable */
+#pdf-link-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none; 
+}
+#pdf-link-layer a {
+    pointer-events: all;
+    display: block;
 }
 
 @media (max-width: 600px) {

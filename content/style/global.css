@@ -5,6 +5,9 @@
   --text-muted: #999;
   --accent: #1a1a1a;
   --font: "Merriweather", system-ui, sans-serif;
+
+  background-color: var(--bg);
+  color: var(--text-primary);
 }
 [data-theme="dark"] { --bg: #111; --text-primary: #f0f0f0; }
 
@@ -17,6 +20,14 @@
 
 h1, h2, h3, h4, h5, h6, a, span {
   font-family: 'Essays1743', Georgia, serif;
+}
+
+h1 {
+  line-height: 1.2;
+}
+
+html {
+  transition: background-color 0.5s ease, color 0.2s ease-in;
 }
 
 a {
@@ -43,7 +54,7 @@ span {
 }
 
 .container {
-  width: 100%;
+  width: 95%;
   max-width: 38rem;
   margin: 0 auto;
   padding: .5rem;
@@ -66,3 +77,18 @@ span {
 .no-underline {
   text-decoration: none;
 }
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  color: inherit;
+}
+

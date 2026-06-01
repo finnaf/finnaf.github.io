@@ -14,15 +14,14 @@
 
 .icon-link i {
   font-size: var(--size);
-}
-
-.icon-link img {
-  margin-top: 4px;
   width: var(--size);
   height: var(--size);
-  filter: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .icon-link:hover {
-  color: #000;
+  color: #f73310;
 }
+

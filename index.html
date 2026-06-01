@@ -11,14 +11,41 @@
   <link rel="stylesheet" href="content/style/icons.css"/>
   <link rel="stylesheet" href="content/style/projects.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-icons-font@9/font/simple-icons.min.css">
+
+  <script>
+    const theme = localStorage.getItem('theme') ??
+      (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    document.documentElement.dataset.theme = theme;
+  </script>
+  
 </head>
 <body>
     <div class="container">
         <header class="page-header">
             <nav>
-                <a href="index.html" class="nav-name">Home</a>
+                <a href="." class="nav-name">Home</a>
+                <button id="theme-toggle" aria-label="Toggle theme">
+                    <svg id="theme-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <!-- Sun (shown in light mode) -->
+                        <g id="icon-sun">
+                            <circle cx="12" cy="12" r="5"/>
+                            <line x1="12" y1="1" x2="12" y2="3"/>
+                            <line x1="12" y1="21" x2="12" y2="23"/>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                            <line x1="1" y1="12" x2="3" y2="12"/>
+                            <line x1="21" y1="12" x2="23" y2="12"/>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                        </g>
+                        <!-- Moon (shown in dark mode) -->
+                        <g id="icon-moon" style="display:none">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                        </g>
+                    </svg>
+                </button>
             </nav>
-            <div class="theme-toggle"></div>
         </header>
     
         <section class="hero">
@@ -31,7 +58,7 @@
                     <i class="fa fa-linkedin-square"></i>
                 </a>
                 <a href="https://devpost.com/finnaf" target="_blank" rel="noopener" class="icon-link">
-                    <img src="assets/images/devpost.svg" alt="Devpost" />
+                    <i class="si si-devpost"></i>
                 </a>
             </div>
         </section>
@@ -52,4 +79,6 @@ consumer hardware.</p>
             </a>
         </section>
     </div>
+
+    <script src="content/scripts/theme-toggle.js"></script>
 </body>

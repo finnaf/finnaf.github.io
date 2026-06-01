@@ -72,6 +72,7 @@ span {
 }
 .nav-name:hover {
   color: var(--red);
+  transition: color 0.55s ease;
 }
 
 .page-break { 

@@ -7,9 +7,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="content/style/global.css"/>
-  <link rel="stylesheet" href="content/style/icons.css"/>
-  <link rel="stylesheet" href="content/style/projects.css"/>
+  <link rel="stylesheet" href="src/style/global.css"/>
+  <link rel="stylesheet" href="src/style/icons.css"/>
+  <link rel="stylesheet" href="src/style/projects.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-icons-font@9/font/simple-icons.min.css">
 
@@ -18,7 +18,7 @@
       (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
     document.documentElement.dataset.theme = theme;
   </script>
-  
+
 </head>
 <body>
     <div class="container">
@@ -69,7 +69,7 @@
         </svg>
         
         <section class="projects">
-            <a href="content/pages/dissertation.html" class="no-underline">
+            <a href="src/pages/dissertation.html" class="no-underline">
                 <h2 class="project-title">Simulating Snow on Alpine Terrain</h2>
                 <span>Undergraduate Dissertation</span>
                 <p>Bla bla This project generates and renders plausible snow cover distributions on alpine scenery
@@ -77,8 +77,19 @@ by modifying and combining existing algorithms from literature. A graphical tool
 to visualise and create the data, able to render large scenes at high frame rates on low-end
 consumer hardware.</p>
             </a>
+
+            <a href="src/pages/dissertation.html" class="no-underline">
+                <h2 class="project-title">Simulating Snow on Alpine Terrain</h2>
+                <span>Undergraduate Dissertation</span>
+                <p>Bla bla This project generates and renders plausible snow cover distributions on alpine scenery
+by modifying and combining existing algorithms from literature. A graphical tool is presented
+to visualise and create the data, able to render large scenes at high frame rates on low-end
+consumer hardware.</p>
+            </a>
+
+            
         </section>
     </div>
 
-    <script src="content/scripts/theme-toggle.js"></script>
+    <script src="src/scripts/theme-toggle.js"></script>
 </body>

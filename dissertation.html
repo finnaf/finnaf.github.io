@@ -41,33 +41,36 @@
         </div>
 
         <p>
-        This project generates and renders plausible snow cover distributions on alpine scenery
-        by modifying and combining existing algorithms from literature. A graphical tool is presented
-        to visualise and create the data, able to render large scenes at high frame rates on low-end
-        consumer hardware.
-      </p>
+            This project generates and renders plausible snow cover distributions on alpine scenery
+            by modifying and combining existing algorithms from literature. A graphical tool is presented
+            to visualise and create the data, able to render large scenes at high frame rates on low-end
+            consumer hardware.
+        </p>
 
-      <div class="actions">
-        <a href="https://github.com/finnaf/dissertation" target="_blank" rel="noopener" class="btn btn-primary">
-          Code Repository
-        </a>
-        <a href="assets/AFFORSELLES26-FINAL.pdf" download class="btn btn-secondary">
-          Download PDF
-        </a>
-      </div>
-
-      <div class="viewer-section">
-        <div class="pdf-wrapper">
-            <iframe
-            src="assets/AFFORSELLES26-FINAL.pdf"
-            title="Dissertation PDF viewer"
-            aria-label="Embedded PDF of dissertation"
-            ></iframe>
-
-            <div class="pdf-fallback">
-            <p>PDF preview not available.</p>
-            </div>
+        <div class="actions">
+            <a href="https://github.com/finnaf/dissertation" target="_blank" rel="noopener" class="btn btn-primary">
+                Code Repository
+            </a>
+            <a href="assets/AFFORSELLES26-FINAL.pdf" download class="btn btn-secondary">
+                Download PDF
+            </a>
         </div>
+
+        <div class="viewer-section">
+            <div class="pdf-wrapper">
+                <div class="pdf-toolbar">
+                    <button class="pdf-btn" id="pdf-prev" aria-label="Previous page">&#8592;</button>
+                    <span class="pdf-page-info"><span id="pdf-page-num">1</span> / <span id="pdf-page-count">—</span></span>
+                    <button class="pdf-btn" id="pdf-next" aria-label="Next page">&#8594;</button>
+                </div>
+                <div class="pdf-canvas-container">
+                    <canvas id="pdf-canvas"></canvas>
+                </div>
+                <div class="pdf-fallback" id="pdf-fallback" style="display:none">
+                    <p>Could not load PDF.</p>
+                    <a href="assets/AFFORSELLES26-FINAL.pdf" target="_blank">Download instead</a>
+                </div>
+            </div>
         </div>
 
 
@@ -82,5 +85,6 @@
   </footer>
 
   <script src="assets/script.js"></script>
+  <script src="assets/scripts/pdf.js" type="module"></script>
 </body>
 </html>

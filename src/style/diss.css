@@ -41,6 +41,7 @@
   border-radius: 10px;
   overflow: hidden;
   background: var(--bg-subtle);
+  width: 100%;
 }
 
 .pdf-toolbar {
@@ -80,14 +81,17 @@
   display: flex;
   justify-content: center;
   min-height: 400px;
+  width: 100%;
 }
 #pdf-canvas {
   display: block;
   max-width: 100%;
+  width: 100%;
   height: auto;
   box-shadow: 0 2px 8px rgba(0,0,0,0.15);
   transition: opacity 0.2s ease;
 }
+
 #pdf-canvas.loading {
   opacity: 0.5;
 }

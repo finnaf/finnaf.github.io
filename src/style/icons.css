@@ -26,8 +26,9 @@
 }
 
 .icon-separator {
-  color: var(--text-primary);
+  color: var(--text-secondary);
   font-size: 1.2em;
   line-height: 0;
   padding-bottom: 0.2em;
+  transition: color 0.2s ease;
 }

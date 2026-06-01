@@ -1,7 +1,7 @@
 .actions {
   display: flex;
   align-items: center;
-  gap: 8px; /* optional spacing */
+  gap: 10px;
   --size: 32px;
 }
 
@@ -25,3 +25,9 @@
   color: var(--red);;
 }
 
+.icon-separator {
+  color: var(--text-primary);
+  font-size: 1.2em;
+  line-height: 0;
+  padding-bottom: 0.2em;
+}

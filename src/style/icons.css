@@ -22,6 +22,6 @@
 }
 
 .icon-link:hover {
-  color: #f73310;
+  color: var(--red);;
 }
 

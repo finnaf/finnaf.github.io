@@ -2,7 +2,38 @@
     color: var(--text-primary);
 }
 
-.project-title {
+.project-title, .project-subtitle {
     padding-bottom: 0px;
     margin-bottom: 0px;
+    line-height: 1em;
+}
+
+.project-desc {
+    margin: 5px;
+}
+
+.project-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 5px;
+}
+
+.project-subtitle {
+  margin: 0;
+}
+
+.tech-tags {
+  font-family: Georgia, serif;
+  font-size: 12px;
+  font-variant: small-caps;
+  letter-spacing: 0.07em;
+  color: var(--text-secondary, #888);
+}
+
+.tech-tags .tech-tag:not(:last-child)::after {
+  content: ' · ';
+  margin: 0 2px;
+  color: var(--text-secondary, #888);
 }

@@ -63,7 +63,7 @@
 }
 .pdf-btn:hover { 
   background: var(--border); 
-  color: #f73310;
+  color: var(--red);
 }
 .pdf-btn:disabled { opacity: 0.3; cursor: default; }
 

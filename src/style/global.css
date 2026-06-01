@@ -11,6 +11,9 @@
   color: var(--text-primary);
 }
 [data-theme="dark"] { --bg: #111; --text-primary: #f0f0f0; }
+[data-theme="dark"] .page-break-svg {
+  filter: invert(1);
+}
 
 @font-face {
   font-family: 'Essays1743';

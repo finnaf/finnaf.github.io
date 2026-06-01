@@ -84,9 +84,15 @@
         <div class="viewer-section">
             <div class="pdf-wrapper">
                 <div class="pdf-toolbar">
-                    <button class="pdf-btn" id="pdf-prev" aria-label="Previous page">&#8592;</button>
-                    <span class="pdf-page-info"><span id="pdf-page-num">1</span> / <span id="pdf-page-count">—</span></span>
-                    <button class="pdf-btn" id="pdf-next" aria-label="Next page">&#8594;</button>
+                    <div class="pdf-toolbar-left"></div>
+                    <div class="pdf-toolbar-center">
+                        <button class="pdf-btn" id="pdf-prev" aria-label="Previous page">&#8592;</button>
+                        <span class="pdf-page-info"><span id="pdf-page-num">1</span> / <span id="pdf-page-count">—</span></span>
+                        <button class="pdf-btn" id="pdf-next" aria-label="Next page">&#8594;</button>
+                    </div>
+                    <div class="pdf-toolbar-right">
+                        <button class="pdf-btn" id="pdf-contents" aria-label="Go to contents">&#9776;</button>
+                    </div>
                 </div>
                 <div class="pdf-canvas-container">
                     <canvas id="pdf-canvas"></canvas>

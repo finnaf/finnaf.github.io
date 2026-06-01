@@ -47,11 +47,23 @@
 .pdf-toolbar {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 1rem;
+  justify-content: space-between;
   padding: 0.6rem 1rem;
   border-bottom: 1px solid var(--border);
   background: var(--bg-subtle);
+}
+.pdf-toolbar-left,
+.pdf-toolbar-right {
+  flex: 1;
+}
+.pdf-toolbar-center {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.pdf-toolbar-right {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .pdf-btn {

@@ -6,9 +6,12 @@ const canvas    = document.getElementById('pdf-canvas');
 const ctx       = canvas.getContext('2d');
 const prev      = document.getElementById('pdf-prev');
 const next      = document.getElementById('pdf-next');
+const contents  = document.getElementById('pdf-contents');
 const numEl     = document.getElementById('pdf-page-num');
 const cntEl     = document.getElementById('pdf-page-count');
 const linkLayer = document.getElementById('pdf-link-layer');
+
+const contentsPage = 5;
 
 let pdfDoc         = null;
 let pageNum        = 1;
@@ -192,3 +195,9 @@ pdfjsLib.getDocument({
 
 prev.addEventListener('click', () => { if (pageNum > 1)               renderPage(--pageNum); });
 next.addEventListener('click', () => { if (pageNum < pdfDoc.numPages) renderPage(++pageNum); });
+contents.addEventListener('click', () => { 
+    if (contentsPage < pdfDoc.numPages){
+        pageNum = contentsPage;
+        renderPage(pageNum);
+    }
+});

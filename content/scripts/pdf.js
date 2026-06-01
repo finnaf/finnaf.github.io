@@ -1,7 +1,7 @@
 import * as pdfjsLib from 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.4.168/pdf.min.mjs';
 pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.4.168/pdf.worker.min.mjs';
 
-const url    = '../assets/AFFORSELLES26-FINAL.pdf';
+const url    = '../../assets/AFFORSELLES26-FINAL.pdf';
 const canvas = document.getElementById('pdf-canvas');
 const ctx    = canvas.getContext('2d');
 const prev   = document.getElementById('pdf-prev');

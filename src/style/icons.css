@@ -38,7 +38,7 @@
 
 #icon-moon,
 #icon-sun {
-  width: 20px;
+  width: clamp(2.5rem, 15vw, 5rem);
   height: 100%;
   object-fit: fill;
 }

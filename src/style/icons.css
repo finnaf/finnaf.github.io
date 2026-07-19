@@ -35,3 +35,10 @@
   padding-bottom: 0.2em;
   transition: color 0.2s ease;
 }
+
+#icon-moon,
+#icon-sun {
+  width: 20px;
+  height: 100%;
+  object-fit: fill;
+}

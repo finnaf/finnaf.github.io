@@ -96,6 +96,14 @@ span {
   text-decoration: none;
 }
 
+.fallback-label {
+  display: none;
+}
+
+.no-fontawesome .fallback-label {
+  display: inline;
+}
+
 nav {
   display: flex;
   align-items: center;
